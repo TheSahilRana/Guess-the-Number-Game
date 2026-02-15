@@ -1,0 +1,75 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(219, 223, 227);
+  margin: 0;
+  padding: 0;
+}
+.game-container{
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgb(86, 98, 108);
+  text-align: center;
+}
+h1{
+  margin-bottom: 10px;
+}
+#description{
+  color: rgb(91, 65, 30);
+  margin-bottom: 20px;
+}
+.difficulty{
+  margin-bottom: 15px;
+}
+.input-section{
+  display: flex;
+  gap: 8px;
+  margin-bottom: 13px;
+}
+input[type="number"]{
+  flex: 1;
+  padding: 8px;
+  font-size: 15px;
+}
+button{
+  padding: 8px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color:blue;
+  color: white;
+}
+button:hover{
+  background-color: green;
+}
+.message{
+  font-weight: bold;
+  margin: 12px 0;
+}
+.message.correct{
+  color: green;
+}
+.message.wrong{
+  color: red;
+}
+.stats{
+  font-size: 13px;
+  margin-top: 10px;
+  color: #444444;
+}
+.restartBtn{
+  margin-top: 15px;
+  width: 100%;
+  background-color:#666;
+}
+@media(max-width:450px){
+  .game-container{
+    margin:20px;
+  }
+}

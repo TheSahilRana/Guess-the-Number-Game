@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="game-container">
+    <h1>🎯 Guess It!</h1>
+    <p id="description">Pick a level and start guessing.</p>
+    <div class="difficulty">
+      <label for="level">Difficulty:</label>
+      <select id="level">
+        <option value="easy">EASY (1-10)</option>
+        <option value="medium">MEDIUM (1-50)</option>
+        <option value="hard">HARD (1-100)</option>
+      </select>
+    </div>
+    <div class="input-section">
+      <input type="number" id="guessInput" placeholder="Enter your guess">
+      <button id="guessBtn">GUESS</button>
+    </div>
+    <p id="message" class="message"></p>
+    <div class="stats">
+      <p>Attempts: <span id="attempts">0</span></p>
+      <p>Previous Guesses: <span id="history">--</span></p>
+      <p>Score: <span id="score">0</span></p>
+    </div>
+    <button id="restartBtn" class="restartBtn">RESTART</button>
+    
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
